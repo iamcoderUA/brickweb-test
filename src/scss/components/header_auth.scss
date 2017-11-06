@@ -1,0 +1,83 @@
+.auth {
+    float: right;
+    vertical-align: 50%;
+    &-list {
+        color: #fff;
+    }
+}
+
+.auth-list__item {
+    display: inline-block;    
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 1px solid #6b4984;
+
+    &:last-child {
+        position: relative;
+        padding-right: 10px;
+        margin-right: 0;
+        border-right: 0;
+    }
+}
+
+.auth-list__link {
+    display: inline-block;
+    font-family: "Mont-Bold";
+    font-size: 16px;        
+    color: #fff;
+    line-height: 16px;
+    
+}
+
+.auth-list__link_orange{
+    @extend .auth-list__link;
+    color: #f9b233;    
+}
+
+.auth-list__link_cart {
+    @extend .auth-list__link;
+    background: url(../img/icons/cart_sprite.png) no-repeat;
+    width: 21px;
+    height: 16px;
+    position: relative;
+    
+    &:hover:before {
+        display: block;
+        content: "";
+        width: 18px;
+        height: 12px;
+        border-radius: 50%;
+        background-image: -moz-linear-gradient( 90deg, rgb(206, 51, 141) 0%, rgb(255, 111, 195) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(206, 51, 141) 0%, rgb(255, 111, 195) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(206, 51, 141) 0%, rgb(255, 111, 195) 100%);
+        background-image: -o-linear-gradient( 90deg, rgb(206, 51, 141) 0%, #ff6fc3 100%);
+        background-image: linear-gradient( 90deg, #ce338d 0%, #ff6fc3 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#ce338d', endColorstr='#ff6fc3');/*For IE7-8-9*/
+        background-color: #ff6fc3;
+        position: absolute;
+        top: -6px;
+        right: -10px;
+        transition: 0.3s;    
+    }
+    &:hover:after {
+        display: block;
+        content: "12";
+        font-family: Arial;
+        font-weight: 700;
+        font-size: 10px;
+        color: #fff;
+        position: absolute;
+        top: -8px;
+        right: -6px;
+        transition: 0.3s;    
+    }
+}
+
+.bg-cart_w {
+    width: 20px; height: 15px;
+    background-position: -0 -0;
+
+    &:hover {
+    background-position: -20px -0;
+    }
+}

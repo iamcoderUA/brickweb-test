@@ -1,0 +1,81 @@
+.popup {
+    background-color: rgb(255, 249, 238);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.34);
+    border-radius: 5px;
+    position: absolute;
+    right: -130px;
+    top: 50px;
+    z-index: 10;
+    padding: 23px 23px;
+    cursor: initial;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: -31px;
+        right: 131px;
+        border: 15px solid transparent;
+        border-bottom: 16px solid rgb(255, 249, 238);
+    }
+    &:before {
+        border-bottom: 15px solid rgb(255, 249, 238);
+        top: -29px; 
+    }
+    &.active {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+}
+
+.popup-list {
+    width: 100%;
+    margin-bottom: 20px;
+
+    &__item {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__link {
+        display: inline-block;    
+        font-family: "Mont-Reg";
+        font-size: 16px;
+        color: #51296f;
+        &:hover {
+            color: #b42f7d;
+        }
+    }
+}
+
+
+
+.popup-form {
+    margin-bottom: 20px;
+    &__input {
+        min-width: 100%;
+        width: 250px;
+        background-image: url(../img/icons/search.png);   
+        background-repeat: no-repeat;  
+        background-position: 10px;
+        display: block;
+        height: 40px;
+        font-size: 14px;
+        box-shadow: inset 1.414px 1.414px 1px 0px rgba(35, 0, 61, 0.36);
+        background-color: rgb(255, 255, 255);
+        border-radius: 4px;
+        padding: 10px 10px 10px 35px; 
+    }
+}
+
+.popup-socials__link {
+    display: inline-block;
+    background: url(../img/icons/socials.png) no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 26px;
+}

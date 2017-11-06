@@ -1,0 +1,46 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  min-width: 998px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+  
+.main-content {
+    height: 100%;
+    width: 100%;
+    min-height: rem(650px);
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .clearfix { display: inline-block; }
+  /* start commented backslash hack \*/
+  * html .clearfix { height: 1%; }
+  .clearfix { display: block; }
+  /* close commented backslash hack */
+  
+  .visuallyhidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }

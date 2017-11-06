@@ -1,0 +1,29 @@
+
+header.header
+    .header-container
+        .header-row
+            .header-row__logo
+                a.logo(href="")
+            .header-row__menu.clearfix
+                nav.nav
+                    ul.nav-list
+                .auth
+                    ul.auth-list
+                        li.auth-list__item
+                            a(href="").auth-list__link Sign in
+                        li.auth-list__item
+                            a(href="").auth-list__link.auth-list__link_orange Sign up
+                        li.auth-list__item
+                            a(href="").auth-list__link.auth-list__link_cart.bg-cart_w
+        .header-row
+            form.form.clearfix
+                input.form__input-event(type="text" name="event" data-name='Search for events by keywords' value='Search for events by keywords').search-input
+                input.form__input-place(type="text" name="location" data-name='Country, postcode or place' value="Country, postcode or place").search-input 
+                button.form__btn-submit(type="submit" name="submit" value="search") search
+    .popup
+        ul.popup-list
+        form.popup-form
+            input.popup-form__input(type="text" name="event" data-name='Site search' value="Site search")
+            button.popup-form__submit(type="submit" name="submit-hidden" value="" style="display: none")
+        .popup-socials
+            a.popup-socials__link(href="")

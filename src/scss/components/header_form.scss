@@ -1,0 +1,57 @@
+.form {
+    width: 100%;
+    &__input-event {
+        width: 550px;
+        max-width: 550px;
+        background-image: url(../img/icons/search.png);   
+        background-repeat: no-repeat;  
+        background-position: 10px;
+    }
+    &__input-place {
+        width: 271px;
+        max-width: 271px;
+        background-image: url(../img/icons/pointer.png);   
+        background-repeat: no-repeat;  
+        background-position: 10px;
+    }
+}
+
+.search-input {
+    float: left;
+    display: block;
+    height: 39px;
+    font-size: 14px;
+    box-shadow: inset 1.414px 1.414px 1px 0px rgba(35, 0, 61, 0.36);
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 10px 10px 5px 35px; 
+    margin-right: 10px;  
+}
+
+.form__btn-submit {
+    float: left;
+    font-family: "Mont-Bold";
+    font-size: 14px;
+    color: #51296f;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.34);        
+    text-align: center;    
+    padding: 10px 13px;
+    border: 1px solid rgba(111, 111, 111, 0.1);
+    border-radius: 4px;    
+    background-image: -webkit-linear-gradient( 120deg, rgb(249,178,51) 0%, #e3b97e 100%);
+    background-image: -moz-linear-gradient( 120deg, rgb(249,178,51) 0%, #e3b97e 100%);
+    background-image: -ms-linear-gradient( 120deg, rgb(249,178,51) 0%, #e3b97e 100%);
+    background-image: -o-linear-gradient( 120deg, rgb(249,178,51) 0%, #e3b97e 100%);
+    background-image: linear-gradient( 90deg, rgb(249,178,51) 0%, #e3b97e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f9b233', endColorstr='#e3b97e');/*For IE7-8-9*/
+    box-shadow: inset -0.707px -0.707px 0px 0px rgba(175, 112, 0, 0.45);
+    cursor: pointer;    
+    transition: .3s;
+    
+    &:hover {
+        border: 1px solid rgba(111, 111, 111, 1);
+        border-radius: 4px;        
+        transition: .3s;
+    }
+}
