@@ -72,10 +72,44 @@
     }
 }
 
-.popup-socials__link {
-    display: inline-block;
-    background: url(../img/icons/socials.png) no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 26px;
+.popup-socials {
+    text-align: center;
+    &__item {
+        display: inline-block;
+        margin-right: 14px;
+        &:last-child {
+            margin-right: 0;
+        } 
+    }
+    &__link {
+        display: inline-block;
+        background: url(../img/icons/socials_sprite.png) no-repeat;
+        background-position: center;
+        width: 26px;
+        height: 26px;
+
+        &_tw {
+        background: url(../img/icons/socials_sprite.png) -16px -16px;
+        }
+
+        &_fb {
+        background: url(../img/icons/socials_sprite.png) -74px -16px;
+        }
+
+        &_google {
+        background: url(../img/icons/socials_sprite.png) -132px -16px;
+        }
+
+        &_in {
+        background: url(../img/icons/socials_sprite.png) -190px -16px;
+        }
+
+        &_mail {
+        background: url(../img/icons/socials_sprite.png) -248px -16px;
+        }
+
+        &_rss {
+        background: url(../img/icons/socials_sprite.png) -306px -16px;
+        }
+    }
 }

@@ -26,4 +26,9 @@ header.header
             input.popup-form__input(type="text" name="event" data-name='Site search' value="Site search")
             button.popup-form__submit(type="submit" name="submit-hidden" value="" style="display: none")
         .popup-socials
-            a.popup-socials__link(href="")
+            - var items = ['popup-socials__link_tw', 'popup-socials__link_fb', 'popup-socials__link_google', 'popup-socials__link_in','popup-socials__link_mail','popup-socials__link_rss']
+            - var links = ['https://google.com', 'https://google.com', 'https://google.com', 'https://google.com','https://google.com','https://google.com']
+            - for (var i = 0; i < items.length; i++) {  
+                li.popup-socials__item
+                    a.popup-socials__link(href=links[i] target='_blank' class=items[i])
+            - }

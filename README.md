@@ -1,5 +1,7 @@
 "test from brickweb Co" (IE9 support ^_^)
 
+Github Pages: https://iamcoderua.github.io/brickweb-test/prod/
+
 Author: Stanislav Mikhniev
 
 Istallation instructions:
